@@ -1,7 +1,8 @@
 class Sum {
     public static void main (String[]args){
-	double num1=(double) args[0];
-	System.out.println("Sum " +(args[0]+args[1]));
+	double num1=Double.parseDouble(args[0]);
+	double num2=Double.parseDouble(args[1]);
+	System.out.println("Sum " +(num1 + num2));
 	
         
     }
