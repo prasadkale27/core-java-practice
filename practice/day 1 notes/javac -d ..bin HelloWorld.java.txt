@@ -1,19 +1,27 @@
-D:\core java\practice\day1\src>javac -d ../bin HelloWorld.java
+
+D:\core java\practice\day1\bin>cd ../src
+
+D:\core java\practice\day1\src>javac -d Sum.java
+error: no source files
+
+D:\core java\practice\day1\src>javac -d../bin Sum.java
+error: invalid flag: -d../bin
+Usage: javac <options> <source files>
+use --help for a list of possible options
+
+D:\core java\practice\day1\src>javac -d ../bin Sum.java
 
 D:\core java\practice\day1\src>cd ../bin
 
-D:\core java\practice\day1\bin>java -cp . HelloWorld prasad kale
-welcome to java HI there
-Hello , prasad kale
+D:\core java\practice\day1\bin>java Sum 15 20
+Error: Could not find or load main class Sum
+Caused by: java.lang.ClassNotFoundException: Sum
 
-D:\core java\practice\day1\bin>java -cp . HelloWorld
-welcome to java HI there
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0
-        at HelloWorld.main(HelloWorld.java:7)
+D:\core java\practice\day1\bin>java -cp  Sum 15 20
+Error: Could not find or load main class 15
+Caused by: java.lang.ClassNotFoundException: 15
 
-D:\core java\practice\day1\bin>java -cp . HelloWorld prasad
-welcome to java HI there
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
-        at HelloWorld.main(HelloWorld.java:7)
+D:\core java\practice\day1\bin>java -cp . Sum 15 20
+Sum 1520
 
 D:\core java\practice\day1\bin>
