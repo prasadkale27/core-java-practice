@@ -1,0 +1,5 @@
+javac -d ../bin HelloWorld.java
+
+cd ../bin
+
+java -cp HelloWorld
