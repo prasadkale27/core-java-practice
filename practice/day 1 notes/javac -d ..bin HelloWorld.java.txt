@@ -1,5 +1,19 @@
-javac -d ../bin HelloWorld.java
+D:\core java\practice\day1\src>javac -d ../bin HelloWorld.java
 
-cd ../bin
+D:\core java\practice\day1\src>cd ../bin
 
-java -cp HelloWorld
+D:\core java\practice\day1\bin>java -cp . HelloWorld prasad kale
+welcome to java HI there
+Hello , prasad kale
+
+D:\core java\practice\day1\bin>java -cp . HelloWorld
+welcome to java HI there
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0
+        at HelloWorld.main(HelloWorld.java:7)
+
+D:\core java\practice\day1\bin>java -cp . HelloWorld prasad
+welcome to java HI there
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+        at HelloWorld.main(HelloWorld.java:7)
+
+D:\core java\practice\day1\bin>
