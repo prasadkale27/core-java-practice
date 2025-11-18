@@ -1,15 +1,8 @@
-D:\core java\practice\day1\src>javac -d ../bin Sum.java
+D:\core java\practice\day1\bin>java -cp . Sum 15 a
+Exception in thread "main" java.lang.NumberFormatException: For input string: "a"
+        at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+        at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+        at java.base/java.lang.Double.parseDouble(Double.java:651)
+        at Sum.main(Sum.java:4)
 
-D:\core java\practice\day1\src>java -cp . Sum
-Error: Could not find or load main class Sum
-Caused by: java.lang.ClassNotFoundException: Sum
-
-D:\core java\practice\day1\src>javac -d ../bin Sum.java
-Sum.java:3: error: incompatible types: String cannot be converted to double
-        double num1=(double) args[0];
-                                 ^
-1 error
-
-D:\core java\practice\day1\src>
-
-
+D:\core java\practice\day1\bin>
