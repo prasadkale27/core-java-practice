@@ -1,27 +1,15 @@
-
-D:\core java\practice\day1\bin>cd ../src
-
-D:\core java\practice\day1\src>javac -d Sum.java
-error: no source files
-
-D:\core java\practice\day1\src>javac -d../bin Sum.java
-error: invalid flag: -d../bin
-Usage: javac <options> <source files>
-use --help for a list of possible options
-
 D:\core java\practice\day1\src>javac -d ../bin Sum.java
 
-D:\core java\practice\day1\src>cd ../bin
-
-D:\core java\practice\day1\bin>java Sum 15 20
+D:\core java\practice\day1\src>java -cp . Sum
 Error: Could not find or load main class Sum
 Caused by: java.lang.ClassNotFoundException: Sum
 
-D:\core java\practice\day1\bin>java -cp  Sum 15 20
-Error: Could not find or load main class 15
-Caused by: java.lang.ClassNotFoundException: 15
+D:\core java\practice\day1\src>javac -d ../bin Sum.java
+Sum.java:3: error: incompatible types: String cannot be converted to double
+        double num1=(double) args[0];
+                                 ^
+1 error
 
-D:\core java\practice\day1\bin>java -cp . Sum 15 20
-Sum 1520
+D:\core java\practice\day1\src>
 
-D:\core java\practice\day1\bin>
+
