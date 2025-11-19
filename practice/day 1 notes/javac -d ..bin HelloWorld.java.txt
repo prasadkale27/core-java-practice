@@ -1,8 +1,130 @@
-D:\core java\practice\day1\bin>java -cp . Sum 15 a
-Exception in thread "main" java.lang.NumberFormatException: For input string: "a"
-        at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
-        at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-        at java.base/java.lang.Double.parseDouble(Double.java:651)
-        at Sum.main(Sum.java:4)
+System Class 
+
+1)It is class and available from default java. Lang package 
+2)What are the different data member static data member of the system class 1)in= std input stream  2)out= standard output stram  3)err = standard err
+3)standard data type of all is printstream
+
+MCQ / Theory साठी ready pointwise answer
+
+System class कुठल्या package मध्ये असते?
+→ java.lang
+
+System class चे तीन मुख्य static fields कोणते?
+→ in, out, err
+
+System.out आणि System.err चा data type काय आहे?
+→ PrintStream
+
+System.in चा data type काय आहे?
+→ InputStream
+System.in  : InputStream
+System.out : PrintStream
+System.err : PrintStream
+
+
+
+
+
+
+
+
+
+
+===================
+
+
+1️⃣ print()
+
+काम: जे दिलंय ते print करतो, newline न टाकता
+
+पुढचं output त्याच line वर सुरू होतं
+
+System.out.print("Hello");
+System.out.print(" Omkar");
+// Output: Hello Omkar
+
+2️⃣ println()
+
+काम: print करून शेवटी newline (\n) टाकतो
+
+म्हणजे पुढचं output नवीन line वर येतं
+
+System.out.println("Hello");
+System.out.println("Omkar");
+// Output:
+Hello
+Omkar
+
+
+println() = print + new line
+
+3️⃣ printf()
+
+काम: formatted output साठी वापरतात
+
+C language मधल्या printf सारखाच
+
+Format string + variables
+
+Common format specifiers:
+
+%d → integer
+
+%f → float / double
+
+%.2f → 2 decimal places
+
+%s → String
+
+%c → char
+
+Example:
+int age = 25;
+double salary = 12345.678;
+String name = "Omkar";
+
+System.out.printf("Name: %s, Age: %d, Salary: %.2f%n", name, age, salary);
+
+
+Output:
+
+Name: Omkar, Age: 25, Salary: 12345.68
+
+
+%n → platform independent newline (Windows/Unix दोन्हीकडे योग्य)
+
+तिन्हींचा difference – 1 line मध्ये
+
+print() → text print कर, same line
+
+println() → text print कर, नंतर new line
+
+printf() → format करून print कर (placeholders वापरून)
+
+==========
+icrosoft Windows [Version 10.0.26200.6899]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\core java\practice\day1\src>javac -d ../bin TestScanner.java
+TestScanner.java:6: error: cannot find symbol
+Scanner sc=new Scanner(System.in);
+^
+  symbol:   class Scanner
+  location: class TestScanner
+TestScanner.java:6: error: cannot find symbol
+Scanner sc=new Scanner(System.in);
+               ^
+  symbol:   class Scanner
+  location: class TestScanner
+2 errors
+
+D:\core java\practice\day1\src>javac -d ../bin TestScanner.java
+
+D:\core java\practice\day1\src>cd ../bin
+
+D:\core java\practice\day1\bin>java -cp . TestScanner
+Enter Two Number For Multipplication
+25 26
+Result= 650.000
 
 D:\core java\practice\day1\bin>
