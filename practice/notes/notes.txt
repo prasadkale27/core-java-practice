@@ -1,13 +1,7 @@
-D:\core java\practice\day 2\src>javac -d ../bin B.java
-B.java:6: error: class C is public, should be declared in a file named C.java
- public class C{
-        ^
+D:\core java\practice\day 2\src>javac -d ../bin Test2.java
+Test2.java:7: error: incompatible types: int cannot be converted to boolean
+        if(count)//  javac err
+           ^
 1 error
 
 D:\core java\practice\day 2\src>
-
-
-
-multiple class with public does not work 
-👉 एक .java file = जास्तीत जास्त 1 public class
-आणि त्या public class चे नाव आणि file नाव exact match असायला पाहिजे.
