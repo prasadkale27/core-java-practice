@@ -1,12 +1,9 @@
-data type of count is int but data type of count==100 is Boolean
+D:\core java\practice\day 2\src>javac -d ../bin TestPrimitiveTypes.java
+TestPrimitiveTypes.java:7: error: incompatible types: possible lossy conversion from int to byte
+                byte b1=128;
+                        ^
+1 error
 
-===================================================
+D:\core java\practice\day 2\src>
 
-D:\core java\practice\day 2\src>javac -d ../bin Test2.java
-
-D:\core java\practice\day 2\src>cd ../bin
-
-D:\core java\practice\day 2\bin>java -cp . Test2
-yess
-
-D:\core java\practice\day 2\bin>
+//compile time error
