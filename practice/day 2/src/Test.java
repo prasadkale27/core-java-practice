@@ -1,7 +1,7 @@
 class A{
 }
 
-class B {
+public class B {
 }
 class C{
 }
