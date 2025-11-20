@@ -4,7 +4,7 @@ public class Test2 {
 {
 	
 	int count=100;
-	if(count)//  javac err
+	if(count==100)//  data type of count is int but data type of count==100 is boolean
 
 	System.out.println("yess");
 	else

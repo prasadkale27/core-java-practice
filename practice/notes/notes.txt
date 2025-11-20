@@ -1,7 +1,12 @@
-D:\core java\practice\day 2\src>javac -d ../bin Test2.java
-Test2.java:7: error: incompatible types: int cannot be converted to boolean
-        if(count)//  javac err
-           ^
-1 error
+data type of count is int but data type of count==100 is Boolean
 
-D:\core java\practice\day 2\src>
+===================================================
+
+D:\core java\practice\day 2\src>javac -d ../bin Test2.java
+
+D:\core java\practice\day 2\src>cd ../bin
+
+D:\core java\practice\day 2\bin>java -cp . Test2
+yess
+
+D:\core java\practice\day 2\bin>
