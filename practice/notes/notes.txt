@@ -1,9 +1,13 @@
-D:\core java\practice\day 2\bin>java -cp . Test
-Error: Could not find or load main class Test
-Caused by: java.lang.ClassNotFoundException: Test
+D:\core java\practice\day 2\src>javac -d ../bin B.java
+B.java:6: error: class C is public, should be declared in a file named C.java
+ public class C{
+        ^
+1 error
 
-D:\core java\practice\day 2\bin>
+D:\core java\practice\day 2\src>
 
 
 
-If file Nmae is different if class name is public it nit work
+multiple class with public does not work 
+👉 एक .java file = जास्तीत जास्त 1 public class
+आणि त्या public class चे नाव आणि file नाव exact match असायला पाहिजे.

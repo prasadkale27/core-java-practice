@@ -3,5 +3,5 @@ class A{
 
 public class B {
 }
-class C{
+ public class C{
 }
