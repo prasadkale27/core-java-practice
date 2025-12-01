@@ -1,0 +1,76 @@
+##Types of conversion in primitive data types 
+1)  widening (auto conversion / promotion ) : performed by javac 
+eg :    byte( source data type ) --> int ( destination data type )
+	short --> double 
+	long --> float
+
+
+2) narrowing conversion : performed by prog.( using type casting )
+	eg double --> float , int -->short 
+
+=================================================================================
+
+float f=23.45; // javac err float to double give you error 
+
+==========================================================================================
+
+1)byte and byte = int 
+2)byte and short = int 
+3)short and short = int 
+4)int and long = long 
+5)long and float = float
+6)float and double = double 
+7)byte/short/int... and double : double
+ 
+====================================================================================================
+java application archie
+
+====================================================================================================
+jdk 9 - moduler system 
+functionaly similar classes are bundled into packages 
+module - is nothing but collection of functionaly similar packages 
+================================================================================================
+method area - loaded class info , static data members , class file .
+out of memory error before java 8 
+==================================
+Heap - one copy of heap per jvm . java object heap state of the object (non static data members ) 1 single copy
+
+=================================================================================================================
+
+stack - stack is created 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
