@@ -1,0 +1,14 @@
+“Resource leak: 'sc' is never closed”
+
+
+D:\core java\practice\day4\src>javac -d ../bin *.java
+
+D:\core java\practice\day4\src>cd ../bin
+
+D:\core java\practice\day4\bin>java -cp .  CreateBox
+Enter Box Dimensions: w d h
+11 11 11
+Box Dims 11.0 11.0 11.0
+volume : 1331.0
+
+D:\core java\practice\day4\bin>
