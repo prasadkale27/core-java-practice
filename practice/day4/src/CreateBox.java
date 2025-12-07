@@ -57,11 +57,23 @@ class CreateBox
         );
 
         // Print box dimensions
-        System.out.println(box1.getBoxDimension());
+        System.out.println("Box 1 dimension " + box1.getBoxDimension());
 
         // Print box volume
         System.out.println("volume : " + box1.getBoxVolume());
 
+	Box box2=new Box(4,5,6);
+	System.out.println("Box 2 dimension " + box2.getBoxDimension());
+	Box box3=box1;//copy of ref 
+	System.out.println("Box 3 dimension " + box3.getBoxDimension());
+	box1=box3=null;//How many objects are marked for GC 
+	System.out.println("Box 1 dimension " + box1.getBoxDimension());//java.lang.Null Pointer exception 
+
+
+
         sc.close();
+	System.out.println("main over");
+
     }
 }
+ 
