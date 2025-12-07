@@ -1,31 +1,10 @@
-new keyword return adreess 
-b2= reference variable and method local variable 
-box1=null;  dereferencing or delinking 
-box1=0;  //compile time error = 
 
-one java object have multiple references 
-one references can not multiple value 
+================================
+if package name is not show then it is annoynams 
 
-java -cp . CreateBox
+create a packaged class , compile n test it 
 
+java -cp . tester.TestPackage
 
-javac -d ..\bin *.java
-
-
-=========================================================================
-
-D:\core java\practice\day4\src>cd ../bin
-
-D:\core java\practice\day4\bin>java -cp . CreateBox
-Enter Box Dimensions: w d h
-10 1 0
-Box 1 dimension Box Dims 10.0 1.0 0.0
-volume : 0.0
-Box 2 dimension Box Dims 4.0 5.0 6.0
-Box 3 dimension Box Dims 10.0 1.0 0.0
-Exception in thread "main" java.lang.NullPointerException: Cannot invoke "Box.getBoxDimension()" because "<local2>" is null
-        at CreateBox.main(CreateBox.java:70)
-
-D:\core java\practice\day4\bin>
 
 
