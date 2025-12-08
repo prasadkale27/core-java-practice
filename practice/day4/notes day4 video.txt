@@ -3,8 +3,15 @@
 if package name is not show then it is annoynams 
 
 create a packaged class , compile n test it 
+D:\core java\practice\day4\src>javac -d ../bin tester/TestPackage.java
+
+D:\core java\practice\day4\src>cd ../bin
 
 java -cp . tester.TestPackage
+
+=================================================================================
+
+
 
 
 

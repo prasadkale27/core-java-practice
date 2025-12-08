@@ -1,0 +1,29 @@
+D:\core java\practice\day5 video\src>javac -d ..\bin *.java
+
+D:\core java\practice\day5 video\src>cd ../bin
+
+D:\core java\practice\day5 video\bin>dir
+
+
+ Directory of D:\core java\practice\day5 video\bin
+
+08-12-2025  03.43 PM    <DIR>          .
+08-12-2025  09.14 AM    <DIR>          ..
+08-12-2025  04.03 PM               579 Box.class
+08-12-2025  04.03 PM             1,453 TestBoxFunctionality.class
+               2 File(s)          2,032 bytes
+               2 Dir(s)  76,197,474,304 bytes free
+
+
+
+D:\core java\practice\day5 video\bin>java -cp . TestBoxFunctionality
+Enter side of cube:
+5
+Volume of cube: 125.0
+Enter 1st Box dims:
+11 11 11
+Enter 2nd Box dims:
+11 11 11
+SAME
+
+D:\core java\practice\day5 video\bin>
