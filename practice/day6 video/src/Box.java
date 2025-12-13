@@ -20,4 +20,12 @@ class Box {
     String getBoxDimensions() {
         return "L=" + length + ", B=" + breadth + ", H=" + height;
     }
+
+    // compare equality of two boxes
+    boolean checkEquality(Box anotherBox)
+    {
+        return this.length  == anotherBox.length &&
+               this.breadth == anotherBox.breadth &&
+               this.height  == anotherBox.height;
+    }
 }

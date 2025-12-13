@@ -11,6 +11,16 @@ class TestBoxFunctionality {
 
         Box defInitedBox = new Box();
         System.out.println("Def Inited Box " + defInitedBox.getBoxDimensions());
+	
+	 System.out.println("Enter 1st box dimension: w d h ");
+	Box b1=new Box(sc.nextDouble(),sc.nextDouble(),sc.nextDouble());
+
+	 System.out.println("Enter 2nd box dimension: w d h ");
+	Box b2=new Box(sc.nextDouble(),sc.nextDouble(),sc.nextDouble());
+	
+	System.out.println(b1.checkEquality(b2)?"same":"Different");
+
+	
 
         sc.close();
         System.out.println("main over");
