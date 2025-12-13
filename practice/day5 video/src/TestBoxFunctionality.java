@@ -24,5 +24,14 @@ class TestBoxFunctionality
             System.out.println("SAME");
         else
             System.out.println("DIFFERENT");
+
+        // ✅ Offset NEW Box creation test (Assignment 3.3)
+        System.out.println("Enter offsets (wOff dOff hOff):");
+        double wOff = sc.nextDouble();
+        double dOff = sc.nextDouble();
+        double hOff = sc.nextDouble();
+
+        Box newBox = b1.createNewBox(wOff, dOff, hOff);
+        System.out.println("New Box dims: " + newBox.getDims());
     }
 }

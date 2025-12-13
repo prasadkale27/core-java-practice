@@ -1,0 +1,19 @@
+D:\core java\practice\day6 video\src>javac -d ../bin *.java
+
+D:\core java\practice\day6 video\src>cd bin
+The system cannot find the path specified.
+
+D:\core java\practice\day6 video\src>cd ../bin
+
+D:\core java\practice\day6 video\bin>java TestBoxFunctionality
+Error: Could not find or load main class TestBoxFunctionality
+Caused by: java.lang.ClassNotFoundException: TestBoxFunctionality
+
+D:\core java\practice\day6 video\bin>java -cp .  TestBoxFunctionality
+Enter side of a cube
+12
+Cube L=12.0, B=12.0, H=12.0
+Def Inited Box L=-1.0, B=-1.0, H=-1.0
+main over
+
+D:\core java\practice\day6 video\bin>
