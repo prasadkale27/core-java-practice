@@ -1,11 +1,11 @@
 class Box {
-    private double length;
-    private double breadth;
+    private double width;
+    private double depth;
     private double height;
 
-    Box(double length, double breadth, double height) {
-        this.length = length;
-        this.breadth = breadth;
+    Box(double width, double depth, double height) {
+        this.width = width;
+        this.depth = depth;
         this.height = height;
     }
 
@@ -18,14 +18,23 @@ class Box {
     }
 
     String getBoxDimensions() {
-        return "L=" + length + ", B=" + breadth + ", H=" + height;
+        return "W=" + width + ", D=" + depth + ", H=" + height;
     }
 
     // compare equality of two boxes
-    boolean checkEquality(Box anotherBox)
-    {
-        return this.length  == anotherBox.length &&
-               this.breadth == anotherBox.breadth &&
-               this.height  == anotherBox.height;
+    boolean checkEquality(Box anotherBox) {
+        return this.width  == anotherBox.width &&
+               this.depth  == anotherBox.depth &&
+               this.height == anotherBox.height;
+    }
+
+    // return a new Box with modified dimensions
+    Box createNewBox(double wOffset, double dOffset, double hOffset) {
+        Box newBox = new Box(
+            this.width + wOffset,
+            this.depth + dOffset,
+            this.height + hOffset
+        );
+        return newBox;
     }
 }

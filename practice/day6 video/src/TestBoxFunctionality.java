@@ -19,7 +19,12 @@ class TestBoxFunctionality {
 	Box b2=new Box(sc.nextDouble(),sc.nextDouble(),sc.nextDouble());
 	
 	System.out.println(b1.checkEquality(b2)?"same":"Different");
+	
+	System.out.println("Enter the offset from the 1st box dims : width-offset depth-offset height-offset");
 
+	Box b3=b1.createNewBox(sc.nextDouble(),sc.nextDouble(),sc.nextDouble());
+	System.out.println("New Box dims "+b3.getBoxDimensions());
+	
 	
 
         sc.close();
