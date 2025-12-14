@@ -20,3 +20,7 @@ New Box dims W=13.0, D=7.0, H=18.0
 main over
 
 D:\core java\practice\day6 video\bin>
+
+
+
+method invocation , writing parameter , returning parameter 
