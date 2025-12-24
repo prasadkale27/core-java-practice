@@ -24,6 +24,12 @@ public class Test1 {
 	{
 		System.out.println("in non static (instance ) initializer  block ");//not called becuase zero object created
 	}
+	
+	Test1(int id)
+	{
+		System.out.println("in ctor ");
+		this.id=id;
+	}
 
 	public static void main(String[] args) {
 
