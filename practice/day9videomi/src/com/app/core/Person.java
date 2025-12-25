@@ -1,5 +1,5 @@
 package com.app.core;
-
+ 
 public class Person {
 	
 	private String firstName , lastName;
@@ -11,6 +11,11 @@ public class Person {
 		this.lastName = lastName;
 	}
 	
+	//can person class modify (override ) inherited form of  toString method ?
+	 public String toString() {
+		 return firstName +" "+lastName;
+		  
+	 }
 
 	
 }

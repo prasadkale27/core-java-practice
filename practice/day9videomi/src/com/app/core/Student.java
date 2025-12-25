@@ -18,4 +18,10 @@ public class Student extends Person {
 
 	}
 
+// modified the inherited method toString 
+	public String toString() {
+		return "Student " + super.toString() + " graduated in " + gradYear + " course: " + course + " fees " + fees
+				+ " marks " + marks;
+	}
+
 }
