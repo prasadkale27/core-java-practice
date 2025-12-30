@@ -12,7 +12,6 @@ public class Person {
 	}
 	
 	//can person class modify (override ) inherited form of  toString method ?
-	@Override
 	public String toString() {
 		return firstName + " " + lastName;
 
