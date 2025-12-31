@@ -16,5 +16,12 @@ public class Faculty extends Person {
 	public String toString() {
 		return " faculty " + super.toString() + " experience " + yrsOfExperience + " sme " + sme;
 	}
-
+	
+	//add new functionality
+	public void teach()
+	{
+		System.out.println(getFirstName()+"expert in " + sme );
+	}
+	
+	
 }

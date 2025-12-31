@@ -24,4 +24,10 @@ public class Student extends Person {
 				+ " marks " + marks;
 	}
 
+	// add new behaviour : study
+	public void study() {
+		// display students first name studying in course name
+		System.out.println(super.getFirstName() + "studying in course" + course);
+	}
+
 }
