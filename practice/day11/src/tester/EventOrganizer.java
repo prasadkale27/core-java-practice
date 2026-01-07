@@ -56,13 +56,19 @@ public class EventOrganizer {
 				index = sc.nextInt() - 1;
 				if (index >= 0 && index < counter) {
 					Person p = participants[index];
-				//	p.study();// javac resolves by type of the reference p : Person , why javac err : since
-								// there is no study method define in Person class
+					// p.study();// javac resolves by type of the reference p : Person , why javac
+					// err : since
+					// there is no study method define in Person class
+					// in order to avoid classCastException , Must use instanceof cheking before
+					// doing downcasting
+					//
 					// downcasting :climbing down inheritance hierarchy (not done implicitly by the
 					// javac )
-					((Student)p).study();
-					
-					
+					if (p instanceof Student)
+						((Student) p).study();
+					else
+						((Faculty) p).teach();
+
 				} else
 					System.out.println("invslid seat no");
 				break;
