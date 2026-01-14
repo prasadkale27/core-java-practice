@@ -10,8 +10,10 @@ public class Tester {
 		System.out.println("Enter 2nd  vehicle details  : regNo,  color,  price");
 		Vehicle vehicle2 = new Vehicle(sc.nextInt(), sc.next(), sc.nextDouble());
 		// test equality of two vehicles
-		System.out.println(vehicle1.equals(vehicle2));// using inherited form of equals :based upon 
-
+		System.out.println(vehicle1.equals(vehicle2));// using inherited form of equals :based upon
+		// method to internal representation of address 
+		System.out.println(vehicle1.hashCode() +"   "+  vehicle2.hashCode());
+		System.out.println(vehicle1==vehicle2);
 		sc.close();
 	}
 }
