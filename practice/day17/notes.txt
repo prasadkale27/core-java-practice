@@ -1,0 +1,37 @@
+
+
+same class all acccesible 
+private 
+default 
+protected 
+public 
+
+=========================
+//same package sub class 
+ //The field A.i is not visible
+  
+===================================================================================================
+
+same pack but non sub class 
+C is not A so , we have to create object of A then default , protected , and public accepted 
+
+===================================================================================================
+
+//diffreent package sub class 
+
+so you have to import first pack which we use a super class pack  BUT SUPERCLASS is default it cannot access outside the class . so you can make it public 
+
+here private and default (BECUASE OF BOUNDARY OF DEFAULT ONLY PACKAGE ) not accepted outside the package
+
+
+================================================================================
+
+Diffrent package and non sub class 
+
+only public visible or accesibile  
+
+
+====================================================
+
+
+
