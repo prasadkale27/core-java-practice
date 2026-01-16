@@ -1,7 +1,7 @@
 package p6;
 
 public interface A {
-	void show();
+	void print();
 	double 	convert(double number);
 
 }

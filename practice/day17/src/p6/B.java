@@ -1,7 +1,7 @@
 package p6;
 
 public interface B {
-	boolean isEven(int nummber);
+	boolean isOdd(int nummber);
 	
 	
 

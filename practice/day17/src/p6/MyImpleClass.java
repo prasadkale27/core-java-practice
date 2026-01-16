@@ -3,7 +3,7 @@ package p6;
 public class MyImpleClass implements C {
 
 	@Override
-	public void show() {
+	public void print() {
 		// TODO Auto-generated method stub
 
 	}
@@ -15,13 +15,13 @@ public class MyImpleClass implements C {
 	}
 
 	@Override
-	public boolean isEven(int nummber) {
+	public boolean isOdd(int nummber) {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
-	public void print(String mesg) {
+	public void write(String mesg) {
 		// TODO Auto-generated method stub
 
 	}

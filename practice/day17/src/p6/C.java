@@ -1,5 +1,5 @@
 package p6;
 
 public interface C extends A,B {
-	void print(String mesg);
+	void write(String mesg);
 }
