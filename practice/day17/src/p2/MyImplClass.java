@@ -11,5 +11,10 @@ public class MyImplClass implements Printable , Computable {
 		// TODO Auto-generated method stub
 		return a + b;
 	}
+	
+	// add new method
+	public void test() {
+		System.out.println("in test");
+	}
 
 }
