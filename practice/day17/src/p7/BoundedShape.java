@@ -5,8 +5,9 @@ public abstract class BoundedShape implements AreaComputation, PerimeterComputat
 
 	public BoundedShape(int x, int y) {
 		super();
-		this.x = x;
 		this.y = y;
+		this.x = x;
+		
 	}
 
 	@Override
