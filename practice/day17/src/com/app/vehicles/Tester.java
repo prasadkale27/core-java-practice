@@ -12,6 +12,10 @@ public class Tester {
 		// test equality of two vehicles
 		System.out.println(vehicle1.equals(vehicle2));// using inherited form of equals :based upon ref equality
 		System.out.println(vehicle1.equals(sc));
+		Vehicle vehicle3=vehicle1;
+		System.out.println(vehicle1.equals(vehicle3));
+		
+		
 		sc.close();
 	}
 }
