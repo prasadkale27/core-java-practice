@@ -1,23 +1,7 @@
-byte a = -128;   // OK
-byte b = 127;    // OK
-byte c = 128;    // ❌ error: possible lossy conversion from int to byte
-
-
--128  ते  127   (total 256 values)
-
-===========================================
-
-Range:Integer
-
-Minimum: -2,147,483,648 ( = -2³¹ )
-
-Maximum: 2,147,483,647 ( = 2³¹ - 1 )
-
-===============
-code D:\core java\practice\day 2\src>javac -d ../bin TestPrimitiveTypes.java
-TestPrimitiveTypes.java:9: error: incompatible types: possible lossy conversion from int to byte
-                byte b3=b1+b2;//RHS : int , LHS  : byte --javac err
-                          ^
-1 error
-
-D:\core java\practice\day 2\src>
+window - > preferences -> font -> vardana -> regular -> 16  
+window - > preferences -> jre  -> installed jre 
+===================================================================================================
+create java class or shortcut c symbol
+===================================================================================================
+drop down -> run Configurations - > arguments -> program arguments
+ 
