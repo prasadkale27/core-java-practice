@@ -1,0 +1,74 @@
+Got it 👍 You mean **threads in the JVM like *main thread* and *garbage collector thread***.
+
+Here’s a **clear, simple explanation** 👇
+
+---
+
+## ✅ Threads in JVM (Examples)
+
+**In the JVM, multiple system and user threads run together.**
+
+### 🔹 1. Main Thread
+
+* Created by the JVM when the program starts
+* Executes the `main()` method
+* It is a **user (non-daemon) thread**
+* Program **does not terminate** while main thread is running
+
+```java
+public static void main(String[] args) {
+    // executed by main thread
+}
+```
+
+---
+
+### 🔹 2. Garbage Collector (GC) Thread
+
+* Created automatically by the JVM
+* Runs in the **background**
+* Frees unused memory (heap)
+* It is a **daemon thread**
+* JVM can exit even if GC thread is running
+
+---
+
+### 🔹 3. Other JVM System Threads
+
+Examples:
+
+* **Finalizer thread**
+* **Reference handler thread**
+* **Signal dispatcher thread**
+* **JIT compiler thread**
+
+All are **daemon threads**.
+
+---
+
+## 🧠 Important Difference (Interview Favorite)
+
+| Main Thread      | GC Thread               |
+| ---------------- | ----------------------- |
+| User thread      | Daemon thread           |
+| Runs `main()`    | Runs in background      |
+| Keeps JVM alive  | Does not keep JVM alive |
+| Created at start | Created by JVM          |
+
+---
+
+## 🔹 Correct sentence (your wording)
+
+> **In the JVM, threads like the main thread and garbage collector thread execute concurrently.**
+
+or
+
+> **JVM contains both user threads (main) and daemon threads (garbage collector).**
+
+---
+
+## ✅ One-line exam answer
+
+> *In the JVM, multiple threads such as the main thread and garbage collector thread run concurrently, where the main thread is a user thread and the GC thread is a daemon thread.*
+
+
