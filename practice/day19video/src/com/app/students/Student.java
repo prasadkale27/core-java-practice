@@ -37,7 +37,7 @@ public class Student {
 			// type of ref - (class type ref )
 			// are you cheking -- ref equality of string or content equality of string
 			// data type of subject is string and string class overriden equal
-
+			//checking of indirect referencing 
 		}
 		return false;
 
