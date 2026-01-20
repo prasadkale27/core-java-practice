@@ -6,7 +6,7 @@ public class Tester1 {
 		// TODO Auto-generated method stub
 		try {
 		System.out.println("in main");
-		int c=100/0;//
+		int c=100/10;//AE
 		System.out.println("result"+c);
 		String s="abcd";
 		System.out.println("parsed int value"+Integer.parseInt(s));//Number format exception 
@@ -17,6 +17,8 @@ public class Tester1 {
 		System.out.println("end of try...");
 		}catch(ArithmeticException e) {
 			System.out.println("1");
+		}catch(NumberFormatException e) {
+			System.out.println("2");
 		}
 		System.out.println("main over ....");
 	}
