@@ -22,7 +22,9 @@ public class Tester1 {
 		}catch(Exception e) {
 			System.out.println("in catch all");
 //			System.out.println(e.getMessage());//detailed err mesg 
-			System.out.println(e);//e.toString internally called  - actual instance is array out of bound 
+//			System.out.println(e);//e.toString internally called  - actual instance is array out of bound 
+			//all the method is inhereted from throwable 
+			e.printStackTrace();
 		}
 		System.out.println("main over ....");
 	}
