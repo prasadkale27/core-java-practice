@@ -9,7 +9,7 @@ public class TestFinally2 {
 		System.out.println("1");
 		try {
 			testMe();
-			System.out.println("back in main");
+			System.out.println("back in main");//exception is still raised and exception is not service 
 		} catch (Exception e) {
 			System.out.println("in main's catch-all " + e);// not enter in that block becusae there is no exception
 		} finally {
