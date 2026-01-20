@@ -7,8 +7,8 @@ public class Tester1 {
 		try {
 		System.out.println("in main");
 		int c=100/10;//AE
-		System.out.println("result"+c);
-		String s="abcd";
+		System.out.println("result " + c);
+		String s="1234";
 		System.out.println("parsed int value"+Integer.parseInt(s));//Number format exception 
 		s=null;
 		System.out.println("char at 0th index "+s.charAt(0));
