@@ -15,12 +15,13 @@ public class Tester1 {
 		int [] data= {1,2,3,4,5};
 		System.out.println("array data "+data[5]);
 		System.out.println("end of try...");
-		}catch(ArithmeticException e) {
-			System.out.println("1");
-		}catch(NumberFormatException  | ArrayIndexOutOfBoundsException  e) {
-			System.out.println("2");
+//		}catch(ArithmeticException e) {
+//			System.out.println("1");
+//		}catch(NumberFormatException  | ArrayIndexOutOfBoundsException  e) {
+//			System.out.println("2");
 		}catch(Exception e) {
 			System.out.println("in catch all");
+			System.out.println(e.getMessage());//detailed err mesg 
 		}
 		System.out.println("main over ....");
 	}
