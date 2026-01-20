@@ -10,15 +10,17 @@ public class Tester1 {
 		System.out.println("result " + c);
 		String s="1234";
 		System.out.println("parsed int value"+Integer.parseInt(s));//Number format exception 
-		s=null;
-		System.out.println("char at 0th index "+s.charAt(0));
+		s="hello";
+		System.out.println("char at 0th index "+s.charAt(0));//null pointer exception 
 		int [] data= {1,2,3,4,5};
 		System.out.println("array data "+data[5]);
 		System.out.println("end of try...");
 		}catch(ArithmeticException e) {
 			System.out.println("1");
-		}catch(NumberFormatException e) {
+		}catch(NumberFormatException  | ArrayIndexOutOfBoundsException  e) {
 			System.out.println("2");
+		}catch(Exception e) {
+			System.out.println("in catch all");
 		}
 		System.out.println("main over ....");
 	}
