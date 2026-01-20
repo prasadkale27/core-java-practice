@@ -8,7 +8,7 @@ public class Tester1 {
 		System.out.println("in main");
 		int c=100/10;//AE
 		System.out.println("result " + c);
-		String s="1234";
+		String s="a1234";
 		System.out.println("parsed int value"+Integer.parseInt(s));//Number format exception 
 		s="hello";
 		System.out.println("char at 0th index "+s.charAt(0));//null pointer exception 
@@ -17,16 +17,17 @@ public class Tester1 {
 		System.out.println("end of try...");
 //		}catch(ArithmeticException e) {
 //			System.out.println("1");
-//		}catch(NumberFormatException  | ArrayIndexOutOfBoundsException  e) {
+//		}catch(NumberFormatException  | ArrayIndexOutOfBoundsException  e) {//multicatch block
 //			System.out.println("2");
 		}catch(Exception e) {
 			System.out.println("in catch all");
 //			System.out.println(e.getMessage());//detailed err mesg 
 //			System.out.println(e);//e.toString internally called  - actual instance is array out of bound 
 			//all the method is inhereted from throwable 
-			e.printStackTrace();
+			e.printStackTrace();//return type is void system.out.println does not accept a void method
 		}
 		System.out.println("main over ....");
 	}
 
 }
+//catch(Exception e) { exception is the super class of all exception and super class ref ref to the any of the  subclasses 
