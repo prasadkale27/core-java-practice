@@ -9,6 +9,7 @@ public class TestTryWithResources {
 		// create scanner instance , using try-with-resources block
 		try (Scanner sc = new Scanner(System.in)) {
 			System.out.println("Enter your  complete name");
+			//
 			System.out.println("Hello " + sc.nextLine());
 			System.out.println("Enter a number ");
 			System.out.println("You entered "+sc.nextDouble());
