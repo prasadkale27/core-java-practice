@@ -25,18 +25,24 @@ public class TestFinally2 {
 	private static void testMe() throws InterruptedException {
 		try {
 			System.out.println("in meth's try");
-			String[] ss = { "aa", "bb" };// array of string type of ref
-			Thread.sleep(1000);// javac forces to handled the checked exception
+			String[] ss = { "aa", "bb" };
+			
+			//there is two string object and one is array holder so three object is created 
+			//
+			// array of string type of ref
+			Thread.sleep(1000);
+			//this is delay of one sec
+			/// javac forces to handled the checked exception
 			// which are the two differ way to satisfy the compiler
 			// 1)try catch block
 			// 2)throws - delegating the exceptioin handled to the caller
 			// testMe() delegating exception handled to the caller and the caller is the
 			// main method
 			// who is the caller of testMe() is the main method
-			System.out.println(ss[10]);//AOB 
-			boolean flag = false;
+			System.out.println(ss[1]);//AOB 
+			boolean flag = true;
 			if (flag)
-				return;
+				System.exit(0);
 			System.out.println("end of try");
 		} finally {
 			System.out.println("in meth's finally");
