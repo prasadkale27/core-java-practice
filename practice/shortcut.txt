@@ -1,0 +1,6 @@
+ctrl + shift + W = CLEAR ALL 
+ctrl + shift + F =Formatting the code 
+ctrl + shift + O =it will removing unneceesary import 
+
+
+
