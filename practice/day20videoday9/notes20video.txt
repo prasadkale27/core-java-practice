@@ -29,3 +29,21 @@ throw new SpeedOutOfRangeException(.....); // legal provided : SpeedOutOfRangeEx
 
 what should be the super cls of custom excs ? -- Throwable, Error, RuntimeException
 reco -- Exception
+
+===============================================================================================================================================
+
+String Handling in Java
+java.lang.String
+• 	Immutable char sequence
+• 	String objects are immutable BUT String refs are mutable, unless declared final
+• 	Inherently thread safe
+• 	Has length only
+java.lang.StringBuilder
+• 	Mutable char sequence
+• 	Added later in API than StringBuffer
+• 	Has same API as StringBuffer
+• 	Has length & capacity attributes
+• 	Inherently thread unsafe
+java.lang.StringBuffer
+• 	Legacy class
+• 	Inherently thread safe
