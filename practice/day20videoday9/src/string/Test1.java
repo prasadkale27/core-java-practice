@@ -1,4 +1,4 @@
-package day20videoday9;
+package string;
 
 public class Test1 {
 	// testing immutabilty of the strings
