@@ -15,7 +15,7 @@ public class Test4 {
 				  //this is for sorting and comparison
 				
 				//Display 1st and last character of string
-				System.out.println(" 1st char   "+   s2.charAt(0) +   "  last character  "    +   s2.charAt(s2.length()-1));
+				System.out.println(" 1st char   "+   s2.charAt(0) +   "  last character  "    +   s2.charAt(s2.length()));
 				
 				
 			}
