@@ -4,7 +4,7 @@ public class Test4 {
 			public static void main(String[] args) {
 				//String class api -  means string class methods , constructors 
 				String s1="Anish";
-				String s2="Amruta";
+				String s2="Testing Strings API Here";
 				System.out.println(s1.compareTo(s2));
 				//invoker is s1 greater than argument 	
 				//compareTo method is used for naturally sorting 
@@ -14,6 +14,8 @@ public class Test4 {
 				//it is compare by case sensitive manner
 				  //this is for sorting and comparison
 				
+				//Display 1st and last character of string
+				System.out.println(" 1st char   "+   s2.charAt(0) +   "  last character  "    +   s2.charAt(s2.length()-1));
 				
 				
 			}
