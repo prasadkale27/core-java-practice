@@ -1,5 +1,7 @@
 package string;
 
+import java.util.Arrays;
+
 public class Test4 {
 			public static void main(String[] args) {
 				//String class api -  means string class methods , constructors 
@@ -27,6 +29,8 @@ public class Test4 {
 				System.out.println(s2.startsWith("Test"));//true
 				System.out.println(s3.endsWith("c++"));//true
 				
+				String s4="one:two:three:four";
+				System.out.println(Arrays.toString(s4.split(":")));//[one, two, three, four]
 				
 				
 				
