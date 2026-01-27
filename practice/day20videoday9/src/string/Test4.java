@@ -4,7 +4,7 @@ public class Test4 {
 			public static void main(String[] args) {
 				//String class api -  means string class methods , constructors 
 				String s1="Anish";
-				String s2="Testing Strings API Here";
+				String s2="Test Strings API Here";
 				System.out.println(s1.compareTo(s2));
 				//invoker is s1 greater than argument 	
 				//compareTo method is used for naturally sorting 
@@ -24,6 +24,8 @@ public class Test4 {
 				String s3=new  String("java Strings are easier than  in c++");
 				System.out.println(s3.indexOf("Strings")+" "+s3.lastIndexOf("Strings"));// 5   5
 				
+				System.out.println(s2.startsWith("Test"));//true
+				System.out.println(s3.endsWith("c++"));//true
 				
 				
 				

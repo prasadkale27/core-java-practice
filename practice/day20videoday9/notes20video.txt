@@ -36,7 +36,7 @@ String Handling in Java
 java.lang.String
 • 	Immutable char sequence
 • 	String objects are immutable BUT String refs are mutable, unless declared final
-• 	Inherently thread safe
+• 	Inherently thread safe 
 • 	Has length only
 java.lang.StringBuilder
 • 	Mutable char sequence
@@ -47,3 +47,65 @@ java.lang.StringBuilder
 java.lang.StringBuffer
 • 	Legacy class
 • 	Inherently thread safe
+
+===============================================================================================================================================
+== checks reference equality
+
+equals() checks content equality
+
+String class overrides equals()
+
+Object class equals() behaves same as ==
+--
+String literal is stored in String Constant Pool and reused, whereas non-literal string created using new always creates a new object in heap memory.
+--
+compareTo() compares strings lexicographically using Unicode values and returns an integer indicating ordering.
+charAt() is used to retrieve a single character from a string at a specified index.
+--===========================================================================
+
+Indexing starts from 0
+
+indexOf() → first occurrence
+
+lastIndexOf() → last occurrence
+
+
+
+0  j
+1  a
+2  v
+3  a
+4   
+5  S  ← first "Strings" starts here
+6  t
+7  r
+8  i
+9  n
+10 g
+11 s
+...
+29 S  ← second (last) "Strings" starts here
+30 t
+31 r
+32 i
+33 n
+34 g
+35 s
+
+
+=============================
+A Regular Expression (Regex) is a pattern used to search, match, or replace text.
+
+👉 In Java, regex is mainly used for:
+
+Validation ✅
+
+Searching 🔍
+
+Splitting ✂️
+
+Replacing 🔁
+
+
+
+
