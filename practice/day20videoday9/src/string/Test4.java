@@ -22,7 +22,8 @@ public class Test4 {
 				System.out.println(s2.contains("API")?"YES":"NO");
 				
 				String s3=new  String("java Strings are easier than Strings in c++");
-				System.out.println(s3.indexOf("Strings")+" "+s3.lastIndexOf("Strings"));
+				System.out.println(s3.indexOf("Strings")+" "+s3.lastIndexOf("Strings1234"));//no such occurence so it print -1
+				
 				
 				
 				
