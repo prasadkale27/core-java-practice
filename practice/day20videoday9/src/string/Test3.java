@@ -15,6 +15,8 @@ public class Test3 {
 		System.out.println(s1 == s4);// false
 		System.out.println(s1.equals(s4));// false - content equality - diff one is lowercase and another is upper case
 		System.out.println(s1.equalsIgnoreCase(s4));// false
+		
+		
 
 	}
 
