@@ -21,7 +21,14 @@ public class Test5 {
 		System.out.println(sb1);//h9999llotrue123.4534567
 		//for deleting
 		sb1.reverse();
-		System.out.println(sb1);//7654354.321eurtoll9999h
+		System.out.println(sb1);//7654354.321eurtoll9999h//reverse contain
+		
+		StringBuilder sb3=new StringBuilder("testing 123");
+		StringBuilder sb4=new StringBuilder("testing 123");
+		System.out.println(sb3== sb4);//false
+		System.out.println(sb3.equals(sb4));//true
+		
+		
 		
 		
 		
