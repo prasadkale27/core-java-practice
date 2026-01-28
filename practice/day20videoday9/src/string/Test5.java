@@ -20,6 +20,9 @@ public class Test5 {
 		sb1.delete(1, 4);
 		System.out.println(sb1);//h9999llotrue123.4534567
 		//for deleting
+		sb1.reverse();
+		System.out.println(sb1);//7654354.321eurtoll9999h
+		
 		
 		
 		
