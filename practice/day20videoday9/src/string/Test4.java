@@ -30,7 +30,7 @@ public class Test4 {
 				System.out.println(s3.endsWith("c++"));//true
 				
 				String s4="one:two:three:four";
-				System.out.println(Arrays.toString(s4.split(":")));//[one, two, three, four]
+				System.out.println(Arrays.toString(s4.split(":")));//[one, two, three, four] 
 				
 				
 				
