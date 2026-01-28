@@ -16,7 +16,12 @@ public class Test5 {
 		System.out.println(sb2);
 		System.out.println(sb1==sb2);//true
 		sb1.insert(2, 999999);
-		System.out.println(sb2);
+		System.out.println(sb2);//he999999llotrue123.4534567
+		sb1.delete(1, 4);
+		System.out.println(sb1);//h9999llotrue123.4534567
+		//for deleting
+		
+		
 		
 		
 	}
